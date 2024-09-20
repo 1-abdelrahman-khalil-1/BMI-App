@@ -47,7 +47,7 @@ class _Screen1State extends State<Screen1> {
                 )),
             child: Container(
               width: double.infinity,
-              height: 90,
+              height: 20,
               color: Colors.red,
               child: Center(
                   child: Text("Calculate",

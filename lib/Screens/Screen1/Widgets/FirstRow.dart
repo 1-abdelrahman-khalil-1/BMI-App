@@ -25,7 +25,7 @@ class _FirstrowState extends State<Firstrow> {
             },
             child: Container(
                 margin: EdgeInsets.all(10),
-                height: 200,
+                height: 150,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: x[i],
@@ -45,7 +45,7 @@ class _FirstrowState extends State<Firstrow> {
               });
             },
             child: Container(
-                height: 200,
+                height: 150,
                 margin: EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),

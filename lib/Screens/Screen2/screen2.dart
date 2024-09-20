@@ -49,7 +49,7 @@ class Screen2 extends StatelessWidget {
           ),
           Container(
             width: 400,
-            height: 500,
+            height: 400,
             margin: EdgeInsets.all(20),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
@@ -66,7 +66,7 @@ class Screen2 extends StatelessWidget {
                 Text("${res.toStringAsFixed(1)}",
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 120,
+                        fontSize: 50,
                         fontWeight: FontWeight.w800)),
                 Text(
                   about,
