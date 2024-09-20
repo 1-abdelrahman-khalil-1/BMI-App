@@ -1,5 +1,4 @@
 import 'package:bmi_calc/Screens/Screen1/screen1.dart';
-import 'package:bmi_calc/Screens/Screen1/Widgets/FirstRow.dart';
 import 'package:flutter/material.dart';
 
 class Secondrow extends StatefulWidget {
@@ -15,24 +14,24 @@ class _SecondrowState extends State<Secondrow> {
   Widget build(BuildContext context) {
    
     return Container(
-      height: 150,
+      
       width: double.infinity,
-      margin: EdgeInsets.all(15),
+      margin: const EdgeInsets.all(15),
       decoration: BoxDecoration(
           color: Colors.white10,
            borderRadius: BorderRadius.circular(10)
            ),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Height",
             style: TextStyle(color: Colors.white70, fontSize: 20),
           ),
           Text(
             "${height.round()} cm",
-            style: TextStyle(
+            style: const TextStyle(
                 color: Colors.white,
-                fontSize: 50,
+                fontSize: 40,
                 fontWeight: FontWeight.bold),
           ),
           Slider(

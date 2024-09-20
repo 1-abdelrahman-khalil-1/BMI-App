@@ -22,20 +22,21 @@ class _Screen1State extends State<Screen1> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 13, 17, 38),
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "BMI Calculator",
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Color.fromARGB(255, 13, 17, 38),
+        backgroundColor: const Color.fromARGB(255, 13, 17, 38),
       ),
       body: Column(
         children: [
-          Firstrow(),
-          Secondrow(),
-          Thirdrow(),
+          const Expanded
+          (child: Firstrow()),
+          const Expanded(child: Secondrow()),
+          const Expanded(child: ThirdRow()),
           GestureDetector(
             onTap: () => Navigator.push(
                 context,
@@ -47,9 +48,9 @@ class _Screen1State extends State<Screen1> {
                 )),
             child: Container(
               width: double.infinity,
-              height: 20,
+              height: 60,
               color: Colors.red,
-              child: Center(
+              child: const Center(
                   child: Text("Calculate",
                       style: TextStyle(
                           color: Colors.white,

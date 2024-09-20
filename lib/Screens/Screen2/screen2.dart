@@ -47,36 +47,38 @@ class Screen2 extends StatelessWidget {
             style: TextStyle(
                 color: Colors.white, fontSize: 50, fontWeight: FontWeight.w900),
           ),
-          Container(
-            width: 400,
-            height: 400,
-            margin: EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white10,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Text(status,
+          Expanded(
+            child: Container(
+              width: 400,
+              
+              margin: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white10,
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(status,
+                      style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 250, 8),
+                          fontSize: 28,
+                          fontWeight: FontWeight.w400)),
+                  Text("${res.toStringAsFixed(1)}",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 50,
+                          fontWeight: FontWeight.w800)),
+                  Text(
+                    about,
                     style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 250, 8),
+                        color: Colors.white70,
                         fontSize: 28,
-                        fontWeight: FontWeight.w400)),
-                Text("${res.toStringAsFixed(1)}",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 50,
-                        fontWeight: FontWeight.w800)),
-                Text(
-                  about,
-                  style: TextStyle(
-                      color: Colors.white70,
-                      fontSize: 28,
-                      fontWeight: FontWeight.w400),
-                  textAlign: TextAlign.center,
-                ),
-              ],
+                        fontWeight: FontWeight.w400),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
             ),
           )
         ],
